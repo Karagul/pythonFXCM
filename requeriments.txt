@@ -1,0 +1,6 @@
+fxcmpy
+pandas
+numpy
+pyti
+time
+datatime
