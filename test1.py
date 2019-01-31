@@ -14,6 +14,7 @@ from pyti.simple_moving_average import simple_moving_average as sma
 #############################
 
 ###### USER PARAMETERS ######
+token = 'ff0c1f57eaf46404581b91c5888ab84c94d16df9'
 symbol = 'GBP/USD'
 timeframe = "m1"	        # (m1,m5,m15,m30,H1,H2,H3,H4,H6,H8,D1,W1,M1)
 fast_sma_periods = 10
@@ -29,7 +30,7 @@ pricedata = None
 numberofcandles = 300
 
 # Connect to FXCM API
-con = fxcmpy.fxcmpy(config_file='fxcm.cfg')
+con = fxcmpy.fxcmpy(access_token=token, log_level="error")
 	
 # This function runs once at the beginning of the strategy to run initial one-time processes/computations
 def Prepare():
